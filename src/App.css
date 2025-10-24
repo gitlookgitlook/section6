@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  background-image: url(../public/images/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(3px);
+  height: 100vh;
+}
+
+.l_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.weatherbox_wrapper {
+  padding: 5rem 10rem;
+  border: 1px solid rgba(255, 218, 185, 0.4);
+  background-color: rgba(255, 250, 240, 0.9);
+  border-radius: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.weatherbtns-wrapper {
+  display: flex;
+  padding: 1rem 1.5rem;
+  gap: 1rem;
+
+  border: 1px solid rgba(255, 218, 185, 0.4);
+  background-color: rgba(255, 250, 240, 0.9);
+  border-radius: 3rem;
+}
