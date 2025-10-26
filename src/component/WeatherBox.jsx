@@ -1,7 +1,7 @@
 import React from "react";
 
 const WeatherBox = ({ weather }) => {
-  console.log("wather?", weather);
+  console.log("weather?", weather);
 
   // 섭씨를 화씨로 변환하는 함수
   const celsiusToFahrenheit = (celsius) => {

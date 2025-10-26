@@ -1,13 +1,31 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 
-const WeatherButton = () => {
+const WeatherButton = ({ cities, setCity, getCurrentLocation }) => {
+  console.log("cities?", cities);
+
   return (
     <div className="weatherbtns-wrapper">
-      <Button variant="outline-info">Current Location</Button>
-      <Button variant="outline-info">Japan</Button>
-      <Button variant="outline-info">Singapore</Button>
-      <Button variant="outline-info">Switzerland</Button>
+      <Button
+        variant="outline-info"
+        onClick={() => {
+          setCity("");
+          getCurrentLocation();
+        }}
+      >
+        Current Location
+      </Button>
+      {cities.map((item) => (
+        <Button
+          variant="outline-info"
+          key={item}
+          onClick={() => {
+            setCity(item);
+          }}
+        >
+          {item}
+        </Button>
+      ))}
     </div>
   );
 };
